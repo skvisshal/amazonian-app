@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.delete_all
+Product.delete_all
 
 demoUser = User.create!(
     name: 'Demo User',
@@ -30,4 +31,10 @@ u3 = User.create!(
     name: 'Bill Gates',
     email: 'bg@email.com',
     password: 'password'
+)
+
+Product.create!(
+    title: 'Fire TV Stick with Alexa Voice Remote (includes TV controls), HD streaming device',
+    description: 'Latest generation of our best-selling Fire TV device - 50% more powerful than the 2nd generation for fast streaming in Full HD. Includes Alexa Voice Remote with power and volume buttons.',
+    price: 39.99
 )
